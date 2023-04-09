@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+    --opensans: "Open Sans", sans-serif;
+    --raleway: "Raleway", sans-serif;
+    --orange: #FF8B38;
+    --gray: #CCCCCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--raleway);
+}
+
+* a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+}
+
+section {
+    padding: 0 20%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+header section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1vh 20%;
+}
+
+header section nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    width: 100%;
+}
+
+header section nav ul li a {
+    display: block;
+    text-align: center;
+    color: var(--gray);
+    font-family: var(--opensans);
+}
+
+header section nav ul li a:hover {
+    color: var(--orange);
+}
+
+header section nav ul li {
+    transition: all 0.2s;
+}
+
+header section nav ul li:hover {
+    transform: scale(1.2);
+}
+
+header .logo {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: var(--opensans);
+}
+
+header .logo span {
+    color: var(--orange);
+    font-weight: 300;
+    font-size: 40px;
+    font-family: var(--opensans);
+}
+
+main .free-trial-form {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/axit/img/hero-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+main .free-trial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    align-items: center;
+    column-gap: 2vh;
+}
+
+main .free h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 90px;
+    font-family: var(--opensans);
+}
+
+main .free span {
+    color: var(--orange);
+    font-weight: 300;
+    font-size: 90px;
+    font-family: var(--opensans);
+}
+
+main .free h2 {
+    color: white;
+    font-family: var(--raleway);
+    font-weight: 400;
+    font-size: 35px;
+    padding-bottom: 3vh;
+}
+
+main .free p {
+    padding-top: 3vh;
+    color: var(--gray);
+    font-family: var(--opensans);
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 5vh;
+}
+
+main .free .download a {
+    border: 3px solid white;
+    color: white;
+    padding: 10px 30px;
+    font-family: var(--opensans);
+}
+
+main .free .download a:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+main .trial {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr 2fr;
+}
+
+main .trial div {
+    border-radius: 2%;
+    background-color: white;
+    grid-column: 2/3;
+    border-radius: 10px;
+}
+
+main .trial div h3 {
+    font-family: var(--opensans);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 3vh 0;
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+main .trial div h3 span {
+    color: var(--orange);
+    font-size: 20px;
+}
+
+main .trial form {
+    padding-top: 4vh;
+    text-align: center;
+}
+
+main .trial form input {
+    height: 6vh;
+    padding-left: 30px;
+    margin: 10px 0;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+main .trial form button {
+    border: none;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    background-color: var(--orange);
+    font-family: var(--opensans);
+}
+
+main section.icons {
+    border-bottom: 2px solid var(--gray);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+main section.icons h2 {
+    font-size: 150%;
+}
+
+main section.icons p {
+    padding-top: 1vh;
+    letter-spacing: 1px;
+}
+
+main section.icons .item-icons {
+    display: grid;
+    grid-template-columns: 60px 3fr 60px;
+}
+
+#btnleft,
+#btnright {
+    color: var(--orange);
+}
+
+main section.icons .item-icons div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+}
+
+main section.icons i,
+main section.icons div i {
+    font-size: 300%;
+    display: block;
+    text-align: center;
+    color: var(--gray);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+main section.icons i:hover {
+    color: var(--orange);
+}
+
+main section.tabs {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    background-color: var(--gray);
+    justify-items: start;
+    column-gap: 75px;
+}
+
+main section.tabs ul {
+    list-style-type: none;
+    display: grid;
+    row-gap: 4px;
+    cursor: pointer;
+}
+
+main section.tabs ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    height: 125px;
+    font-family: var(--opensans);
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+main section.tabs ul li:hover,
+main section.tabs ul li.active {
+    background-color: var(--orange);
+}
+
+main section.tabs .tab-content.active {
+    display: grid;
+}
+
+main section.tabs .tab-content {
+    display: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    align-items: center;
+}
+
+main section.tabs .tab-content .download a {
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    font-family: var(--opensans);
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+main section.img-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+main section.img-left img {
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 4px #a8a8a8);
+}
+
+/* черта полоска */
+main section.img-left .sublist hr,
+main section.img-right hr,
+main section.pricing hr,
+main section.awesome hr,
+main .free hr {
+    width: 75px;
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+}
+
+main section.img-left .sublist {
+    display: grid;
+    row-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr, 2fr);
+}
+
+main section.img-left .content {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+
+main section.img-left .content .icon {
+    border: 2px solid var(--orange);
+    width: 50px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+}
+
+main section.img-left .content i {
+    color: var(--orange);
+    font-size: 25px;
+}
+
+main section.img-left .content .text h3 {
+    padding-bottom: 1vh;
+}
+
+main section.img-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: var(--gray);
+    justify-items: end;
+}
+
+main section.img-right img {
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 4px #a8a8a8);
+}
+
+main section.img-right .content {
+    display: grid;
+    row-gap: 25px;
+}
+
+main section.awesome {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section.awesome h2 {
+    padding-bottom: 3vh;
+}
+
+main section.awesome p {
+    padding-top: 3vh;
+}
+
+main section.awesome .awesome-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+main section.awesome .awesome-items .item {
+    display: grid;
+    grid-template-rows: 40px 40px 1fr;
+    padding-top: 5vh;
+    align-items: center;
+    text-align: center;
+    row-gap: 2vh;
+    justify-items: center;
+}
+
+main section.awesome .awesome-items .item .icon {
+    border: 3px solid var(--orange);
+    width: 75px;
+    height: 75px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+}
+
+main section.awesome .awesome-items .item .icon i {
+    color: var(--orange);
+    font-size: 250%;
+}
+
+main section.awesome .awesome-items .item h3 {
+    padding-top: 3vh;
+}
+
+main section.pricing {
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+main section.pricing .items-pricing {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+    justify-items: center;
+}
+
+main section.pricing .items-pricing ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    padding-top: 3vh;
+    cursor: pointer;
+}
+
+main section.pricing .items-pricing ul.active {
+    padding: 0;
+}
+
+main section.pricing .items-pricing ul li {
+    width: 100%;
+    background-color: rgb(239, 238, 238);
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid var(--gray);
+}
+
+main section.pricing .items-pricing ul li:nth-child(1) {
+    background-color: black;
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 20px 0;
+    border: 0;
+}
+
+main section.pricing .items-pricing ul li:nth-child(2) {
+    background-color: black;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border: 0;
+    border-top: 1px solid white;
+}
+
+main section.pricing .items-pricing ul li:nth-child(3) {
+    background-color: var(--orange);
+    color: var(--orange);
+    font-size: 5%;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+}
+
+main section.pricing .items-pricing ul li:nth-child(3).active {
+    font-size: 20px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+}
+
+main section.pricing .items-pricing ul li:nth-child(2) p:first-child {
+    font-size: 35px;
+}
+
+main section.pricing .items-pricing ul li:nth-child(2) p:first-child span {
+    font-size: 75px;
+}
+
+main section.pricing .items-pricing ul li:nth-child(2) p:last-child {
+    font-size: 17px;
+    font-weight: normal;
+    font-style: italic;
+    opacity: 0.7;
+    text-transform: capitalize;
+}
