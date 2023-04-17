@@ -25,7 +25,6 @@ function bubbleLeft() {
         arr[index] = arr[index + 1]
     }
     arr[arr.length - 1] = firstItem
-    console.log(arr)
 }
 
 function bubbleRight() {
@@ -34,7 +33,6 @@ function bubbleRight() {
         arr[index] = arr[index - 1]
     }
     arr[0] = lastItem
-    console.log(arr)
 }
 
 btnLeft.addEventListener("click", function () {
@@ -96,3 +94,9 @@ for (const item_tab of basic) {
         }
     })
 }
+
+let menuBtn = document.querySelector('.menu-button');
+let menu = document.querySelector('.navbar-menu');
+menuBtn.addEventListener('click', function(){
+	menu.classList.toggle('active');
+})
